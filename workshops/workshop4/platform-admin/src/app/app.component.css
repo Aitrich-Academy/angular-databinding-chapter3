@@ -1,9 +1,10 @@
-.container{
+.container {
     display: flex;
     background: #edeaea;
 }
-.main-content{
+
+.main-content {
     flex-grow: 1;
-  margin-left: 350px; 
-  background: #edeaea;
+    margin-left: 350px;
+    background: #edeaea;
 }

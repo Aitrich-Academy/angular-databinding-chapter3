@@ -30,7 +30,7 @@ export class JobsComponent {
 
   }
 
-  resetBackground(resetNumber:any){
+  resetBackground(resetNumber: any) {
 
     switch (resetNumber) {
       case 1: this.divBackgroundColor1 = this.resetBlue;
@@ -92,10 +92,10 @@ export class JobsComponent {
       jobDescription: "Laravel for back-end & API experience is a must,Angular experience is good to have but not a must",
       location: "Thrissur, India"
     },
-]
-    filter(jobName:string){
-      const filteredJobs: Job[] = this.jobs.filter(jobs  =>jobs.jobTitle=jobName);
-      console.log(filteredJobs);
+    ]
+  filter(jobName: string) {
+    const filteredJobs: Job[] = this.jobs.filter(jobs => jobs.jobTitle = jobName);
+    console.log(filteredJobs);
 
-    }
+  }
 }
