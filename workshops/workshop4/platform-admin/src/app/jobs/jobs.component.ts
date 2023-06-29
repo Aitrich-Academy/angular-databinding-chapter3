@@ -14,6 +14,7 @@ export class JobsComponent {
   divBackgroundColor3: string = "rgb(202, 169, 232)";
   divBackgroundColor4: string = "rgb(202, 169, 232)";
   divBackgroundColor5: string = "rgb(202, 169, 232)";
+  
   changeBackground(divNumber: any) {
     switch (divNumber) {
       case 1: this.divBackgroundColor1 = this.blue;
@@ -72,7 +73,7 @@ export class JobsComponent {
       location: "Kochi, India"
     },
     {
-      jobTitle: "Photo Grapher",
+      jobTitle: "photographer",
       companyName: "Aitrich Technologies",
       salary: "34,000 - 50,000",
       jobDescription: "Select and assemble proper equipment, and choose settings and props based on client’s wishes and theme of the photo shoot",
@@ -94,7 +95,17 @@ export class JobsComponent {
     },
     ]
   filter(jobName: string) {
-    const filteredJobs: Job[] = this.jobs.filter(jobs => jobs.jobTitle = jobName);
+    console.log(jobName)
+    const filteredJobs: Job[] = this.jobs.filter(jobs=> Object.values(jobs).some(value=>typeof value === 'string' && value.toLowerCase().includes(jobName.toLowerCase())));
+    this.jobs=filteredJobs;
+    console.log(filteredJobs);
+
+  }
+
+  filterProgrammer(jobName:string){
+    console.log(jobName)
+    const filteredJobs: Job[] = this.jobs.filter(jobs=> Object.values(jobs).some(value=>typeof value === 'string' && value.toLowerCase().includes(jobName.toLowerCase())));
+    this.jobs=filteredJobs;
     console.log(filteredJobs);
 
   }

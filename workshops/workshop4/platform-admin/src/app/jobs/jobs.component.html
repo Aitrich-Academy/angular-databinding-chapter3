@@ -9,11 +9,11 @@
     <div class="inline-div" [style.background-color]="divBackgroundColor1" (mouseover)="changeBackground(1)"
         (mouseout)="resetBackground(1)">All Skill</div>
     <div class="inline-div" [style.background-color]="divBackgroundColor2" (mouseover)="changeBackground(2)"
-        (mouseout)="resetBackground(2)" (click)="filter('photographer')">Programmer</div>
+        (mouseout)="resetBackground(2)" (click)="filterProgrammer('programmer')">Programmer</div>
     <div class="inline-div" [style.background-color]="divBackgroundColor3" (mouseover)="changeBackground(3)"
         (mouseout)="resetBackground(3)">Software Engineer</div>
     <div class="inline-div" [style.background-color]="divBackgroundColor4" (mouseover)="changeBackground(4)"
-        (mouseout)="resetBackground(4)">Photo Grapher</div>
+        (mouseout)="resetBackground(4)"(click)="filter('photographer')" >Photo Grapher</div>
     <div class="inline-div" [style.background-color]="divBackgroundColor5" (mouseover)="changeBackground(5)"
         (mouseout)="resetBackground(5)">Digital Marketing</div>
 </div>
@@ -35,6 +35,7 @@
 
 </div>
 
+<div *ngIf="jobs.length > 0; else noJobsFound">
 <div class="card-container">
     <ng-container *ngFor="let list of jobs">
         <div class="card">{{list.companyName}}
@@ -55,3 +56,8 @@
 
     </ng-container>
 </div>
+</div>
+
+<ng-template #noJobsFound>
+    <p>No jobs found.</p>
+  </ng-template>
