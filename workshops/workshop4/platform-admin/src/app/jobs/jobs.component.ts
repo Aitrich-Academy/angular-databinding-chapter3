@@ -80,33 +80,41 @@ export class JobsComponent {
       location: "Thrissur, India"
     },
     {
-      jobTitle: "Digital Marketing",
+      jobTitle: "DigitalMarketing",
       companyName: "Aitrich Technologies",
       salary: "34,000 - 50,000",
       jobDescription: "Plan and execute digital marketing campaigns,Monitor and analyze the effectiveness of marketing content",
       location: "Thrissur, India"
     },
     {
-      jobTitle: "Software Engineer",
+      jobTitle: "SoftwareEngineer",
       companyName: "Aitrich Technologies",
       salary: "34,000 - 50,000",
       jobDescription: "Laravel for back-end & API experience is a must,Angular experience is good to have but not a must",
       location: "Thrissur, India"
     },
     ]
+
+     tempJobs:Job[]=this.jobs;
   filter(jobName: string) {
+    // let tempJobs:Job[]=this.jobs;
+    if(jobName === "All"){
+      console.log("all");
+      return this.tempJobs=this.jobs;
+      console.log(this.tempJobs)
+    }
+    else{
     console.log(jobName)
-    const filteredJobs: Job[] = this.jobs.filter(jobs=> Object.values(jobs).some(value=>typeof value === 'string' && value.toLowerCase().includes(jobName.toLowerCase())));
-    this.jobs=filteredJobs;
-    console.log(filteredJobs);
-
+    const filteredJobs: Job[]=this.jobs.filter(jobs=> Object.values(jobs).some(value=>typeof value === 'string' && value.toLowerCase().includes(jobName.toLowerCase())));
+    return  this.tempJobs=filteredJobs;
+      }
   }
 
-  filterProgrammer(jobName:string){
-    console.log(jobName)
-    const filteredJobs: Job[] = this.jobs.filter(jobs=> Object.values(jobs).some(value=>typeof value === 'string' && value.toLowerCase().includes(jobName.toLowerCase())));
-    this.jobs=filteredJobs;
-    console.log(filteredJobs);
+//   filterProgrammer(jobName:string){
+//     console.log(jobName)
+//     const filteredJobs: Job[] = this.jobs.filter(jobs=> Object.values(jobs).some(value=>typeof value === 'string' && value.toLowerCase().includes(jobName.toLowerCase())));
+//     this.jobs=filteredJobs;
+//     console.log(filteredJobs);
 
-  }
+//   }
 }

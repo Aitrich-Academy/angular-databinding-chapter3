@@ -7,15 +7,15 @@
 <div class="suggestion-container">
     <div class="">Suggestions</div>
     <div class="inline-div" [style.background-color]="divBackgroundColor1" (mouseover)="changeBackground(1)"
-        (mouseout)="resetBackground(1)">All Skill</div>
+        (mouseout)="resetBackground(1)"  (click)="filter('All')">All Skill</div>
     <div class="inline-div" [style.background-color]="divBackgroundColor2" (mouseover)="changeBackground(2)"
-        (mouseout)="resetBackground(2)" (click)="filterProgrammer('programmer')">Programmer</div>
+        (mouseout)="resetBackground(2)" (click)="filter('programmer')">Programmer</div>
     <div class="inline-div" [style.background-color]="divBackgroundColor3" (mouseover)="changeBackground(3)"
-        (mouseout)="resetBackground(3)">Software Engineer</div>
+        (mouseout)="resetBackground(3)"  (click)="filter('SoftwareEngineer')">Software Engineer</div>
     <div class="inline-div" [style.background-color]="divBackgroundColor4" (mouseover)="changeBackground(4)"
         (mouseout)="resetBackground(4)"(click)="filter('photographer')" >Photo Grapher</div>
     <div class="inline-div" [style.background-color]="divBackgroundColor5" (mouseover)="changeBackground(5)"
-        (mouseout)="resetBackground(5)">Digital Marketing</div>
+        (mouseout)="resetBackground(5)" (click)="filter('digitalmarketing')" >Digital Marketing</div>
 </div>
 
 <div class="">
@@ -37,7 +37,7 @@
 
 <div *ngIf="jobs.length > 0; else noJobsFound">
 <div class="card-container">
-    <ng-container *ngFor="let list of jobs">
+    <ng-container *ngFor="let list of tempJobs">
         <div class="card">{{list.companyName}}
             <div class="job-title">
                 <div class="left-content">
