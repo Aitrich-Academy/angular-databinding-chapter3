@@ -14,7 +14,7 @@ export class JobsComponent {
   divBackgroundColor3: string = "rgb(202, 169, 232)";
   divBackgroundColor4: string = "rgb(202, 169, 232)";
   divBackgroundColor5: string = "rgb(202, 169, 232)";
-  
+
   changeBackground(divNumber: any) {
     switch (divNumber) {
       case 1: this.divBackgroundColor1 = this.blue;
@@ -95,26 +95,19 @@ export class JobsComponent {
     },
     ]
 
-     tempJobs:Job[]=this.jobs;
+  tempJobs: Job[] = this.jobs;
   filter(jobName: string) {
     // let tempJobs:Job[]=this.jobs;
-    if(jobName === "All"){
+    if (jobName === "All") {
       console.log("all");
-      return this.tempJobs=this.jobs;
+      return this.tempJobs = this.jobs;
       console.log(this.tempJobs)
     }
-    else{
-    console.log(jobName)
-    const filteredJobs: Job[]=this.jobs.filter(jobs=> Object.values(jobs).some(value=>typeof value === 'string' && value.toLowerCase().includes(jobName.toLowerCase())));
-    return  this.tempJobs=filteredJobs;
-      }
+    else {
+      console.log(jobName)
+      const filteredJobs: Job[] = this.jobs.filter(jobs => Object.values(jobs).some(value => typeof value === 'string' && value.toLowerCase().includes(jobName.toLowerCase())));
+      return this.tempJobs = filteredJobs;
+    }
   }
 
-//   filterProgrammer(jobName:string){
-//     console.log(jobName)
-//     const filteredJobs: Job[] = this.jobs.filter(jobs=> Object.values(jobs).some(value=>typeof value === 'string' && value.toLowerCase().includes(jobName.toLowerCase())));
-//     this.jobs=filteredJobs;
-//     console.log(filteredJobs);
-
-//   }
 }
