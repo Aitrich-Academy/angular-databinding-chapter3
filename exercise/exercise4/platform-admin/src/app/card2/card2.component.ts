@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class Card2Component {
 
+  totalJobSeeker:number=50;
 }

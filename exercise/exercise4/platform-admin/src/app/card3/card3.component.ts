@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./card3.component.css']
 })
 export class Card3Component {
-
+totalCompanies:number=90;
 }

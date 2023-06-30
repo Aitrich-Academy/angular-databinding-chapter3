@@ -95,6 +95,7 @@ export class JobsComponent {
     },
     ]
 
+    totalJobs:number=this.jobs.length;
   tempJobs: Job[] = this.jobs;
   filter(jobName: string) {
     // let tempJobs:Job[]=this.jobs;

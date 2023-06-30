@@ -9,7 +9,7 @@ import { MainCount1Component } from './main-count1/main-count1.component';
 import { Card1Component } from './card1/card1.component';
 import { Card2Component } from './card2/card2.component';
 import { Card3Component } from './card3/card3.component';
-
+import { ChartComponent } from './chart/chart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +18,13 @@ import { Card3Component } from './card3/card3.component';
     MainCount1Component,
     Card1Component,
     Card2Component,
-    Card3Component
+    Card3Component,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
