@@ -10,6 +10,8 @@ import { Card1Component } from './card1/card1.component';
 import { Card2Component } from './card2/card2.component';
 import { Card3Component } from './card3/card3.component';
 import { ChartComponent } from './chart/chart.component';
+import { NgChartsModule } from 'ng2-charts';
+import { BaseChartDirective } from 'ng2-charts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,11 +21,13 @@ import { ChartComponent } from './chart/chart.component';
     Card1Component,
     Card2Component,
     Card3Component,
-    ChartComponent
+    ChartComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgChartsModule,
     
   ],
   providers: [],
