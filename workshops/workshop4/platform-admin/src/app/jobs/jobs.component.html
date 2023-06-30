@@ -35,7 +35,7 @@
 
 </div>
 
-<div *ngIf="jobs.length > 0; else noJobsFound">
+<div *ngIf="tempJobs.length > 0; else noJobsFound">
     <div class="card-container">
         <ng-container *ngFor="let list of tempJobs">
             <div class="card">{{list.companyName}}
