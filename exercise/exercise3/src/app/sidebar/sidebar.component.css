@@ -1,0 +1,32 @@
+.group {
+    margin-bottom: 20px; /* Adjust spacing between groups */
+    margin-top: 40px;
+  }
+  
+  .heading {
+    font-size: 18px;
+
+  }
+  
+  .checkbox-group {
+    text-align: left;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    transform: scale(1.5); /* Increase the size of the checkboxes */
+    margin-top: 35px;
+  }
+  
+  .checkbox-group label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 35px;
+  }
+
+  .container
+  {
+    margin-left: 150px;
+  }

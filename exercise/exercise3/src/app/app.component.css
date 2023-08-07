@@ -1,0 +1,14 @@
+.row {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  .col-3 {
+    flex-basis: 25%; /* Adjust the width as needed */
+  }
+  
+  .col-9 {
+    flex-basis: 75%; /* Adjust the width as needed */
+    margin: 0 80px;
+  }
+  
