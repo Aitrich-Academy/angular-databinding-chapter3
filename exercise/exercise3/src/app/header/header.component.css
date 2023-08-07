@@ -1,145 +1,35 @@
-.navbar {
-    background-color: white;
+.container
+{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 120px;
+ 
+   
 }
-
-.navbar-left {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-heading {
-    font-size: 20px;
-    margin-right: 20px;
-}
-
-.navbar-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-menu li {
-    display: inline-block;
-    margin-right: 10px;
-
-}
-
-.navbar-menu a {
-    color: rgb(0, 174, 255);
-}
-
-.navbar-menu li:last-child {
-    margin-right: 0;
-}
-
-.navbar-right {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-login,
-.navbar-signup {
-    margin-left: 10px;
-}
-
-.navbar-signup {
-    background-color: rgb(0, 174, 255);
-    color: white;
-    padding: 15px 25px;
-    
-}
-
-.navbar-login a {
-    color: rgb(0, 174, 255);
-}
-
-.navbar-signup a {
-    color: white;
-}
-
-a {
+a{
+    margin-left: 30px;
     text-decoration: none;
+color: rgb(174, 174, 174);
+    font-family:Bahnschrift;
 }
 
-.header-content {
-    text-align: center;
-    padding: 20px 20px 80px 20px;
-    background-color: #ececf3;
+.left
+{
+    font-size: x-large;
+    font-weight: 800;
 }
 
-.main-heading {
-    font-size: 50px;
-    margin-bottom: 10px;
-    font-weight: bolder;
-}
-
-.sub-heading {
-    margin: 50px 0px;
-    font-size: 16px;
-    color: rgb(105, 104, 104);
-    font-weight: 400;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: 25px 0px;
-    margin: 50px 70px 20px 140px;
-}
-
-.search-option {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.search-option img {
-    margin-right: 5px;
-}
-
-.vertical-line {
-    height: 30px;
-    width: 1px;
-    background-color: #ccc;
-    margin: 0 30px;
-}
-
-.search-button {
-    background-color: rgb(0, 174, 255);
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-    margin-left: 20px;
+.right
+{
     font-size: large;
-    font-weight: 300;
+    display: flex;
+    align-items: center;
 }
 
-.search-option input {
-    border: none;
-    border-bottom: 1px solid;
-    width: 400px;
-    margin-left: 5px;
+.right img,
+.right a {
+    vertical-align: middle;
 }
 
-#search-location {
-    margin: 0px 20px;
-}
-
-.popular {
-    font-weight: 300;
-    color: gray;
-    float: left;
-    margin: 0px 150px;
-}
-
-.decoration-img {
-    position: relative;
-    left: 7%;
+.right img {
+    margin-left: 20px;
 }

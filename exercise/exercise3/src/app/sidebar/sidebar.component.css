@@ -1,32 +1,49 @@
-.group {
-    margin-bottom: 20px; /* Adjust spacing between groups */
-    margin-top: 40px;
-  }
-  
-  .heading {
-    font-size: 18px;
+.container {
+    background-color: #20a6fc;
 
-  }
-  
-  .checkbox-group {
-    text-align: left;
-  }
-  
-  .checkbox-group input[type="checkbox"] {
-    display: inline-block;
-    margin-right: 5px;
-    vertical-align: middle;
-    transform: scale(1.5); /* Increase the size of the checkboxes */
-    margin-top: 35px;
-  }
-  
-  .checkbox-group label {
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: 35px;
-  }
+    padding: 30px 0;
+    color: white;
+    padding-bottom: 150px;
+    height: 100%;
+}
 
-  .container
-  {
-    margin-left: 150px;
-  }
+h1 {
+    text-align: center;
+}
+
+.container-inside,
+.inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#open-to-work {
+    background-color: rgb(76, 179, 43);
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+.inside {
+    position: relative;
+    top: -35px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 90px;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 150px;
+}
+
+.menu img {
+    margin-right: 10px;
+    height: 25px;/* Adjust the height as needed */
+    width: 25px;/* Adjust the width as needed */
+}

@@ -1,39 +1,37 @@
-<h1>All Jobs</h1>
-<p>Showing 73 results</p>
+<div class="container">
+    <div class="content">
 
-<div class="container" *ngFor="let group of detailGroups">
-    <div *ngIf="group.show">
-      <img [src]="group.logo" alt="Company Logo">
-    </div>
-    <div class="text-container">
-      <h3>{{ group.jobDesignation }}</h3>
-      <p>Agency &bull; {{ group.location }}</p>
-      <p> <span class="full-time"> {{ group.text1 }} </span> <span class="marketing"> {{ group.text2 }}</span> <span class="design">{{ group.text3 }}</span></p>
-    </div>
 
-    <div class="right-content">
-        <div class="apply-container">
-          <div class="apply-button-container">
-            <button class="apply-button">Apply</button>
-          </div>
-          <div class="range-input-container">
-            <input type="range" class="range-input">
-            <span class="range-value"></span>
-          </div>
+        <h2>My Applications</h2>
+
+        <div class="jobs" *ngFor="let job of jobs">
+            <div class="job" *ngIf="job.isFeatured">
+                <div class="job-header">
+                    <div class="company">
+                        <img [src]="job.companyLogo" alt="Company Logo">
+                        <div class="text-container">
+                            <p style="font-size: large;">{{ job.designation }}</p>
+                            <p><span style="color: deepskyblue;">{{ job.companyName }}</span> &bull;<span
+                                    style=" color: gray;">London</span></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="job-text">
+                    <p>We are looking for a UI/UX Designer to turn our software into easy-to-use products for our
+                        clients.</p>
+                </div>
+                <div class="job-footer">
+                    <div class="pills">
+                        <p>{{ job.text1 }}</p>
+                        <p>{{ job.text2 }}</p>
+                        <p>{{ job.text3 }}</p>
+                        <p>{{ job.text4 }}</p>
+                        <p>{{ job.text5 }}</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
-         
-      </div>
-
-  </div>
-
-  <ul class="pagination">
-    <li><a href="#"><img src="assets\images\Vector.png"></a></li>
-    <li><a href="#" class="active">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><span class="dots">...</span></li>
-    <li><a href="#">33</a></li>
-    <li><a href="#"><img src="assets\images\Icon.png"></a></li>
-  </ul>
+    </div>
+</div>

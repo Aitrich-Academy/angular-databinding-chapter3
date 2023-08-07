@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Components": {
+    "Routing-SavedJobs": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/components",
+            "outputPath": "dist/routing-saved-jobs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Components:build:production"
+              "browserTarget": "Routing-SavedJobs:build:production"
             },
             "development": {
-              "browserTarget": "Components:build:development"
+              "browserTarget": "Routing-SavedJobs:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Components:build"
+            "browserTarget": "Routing-SavedJobs:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "f3206955-9172-4c9c-819f-f6275f37e0c9"
   }
 }
