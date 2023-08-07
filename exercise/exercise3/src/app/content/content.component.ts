@@ -6,29 +6,63 @@ import { Component } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent {
-  detailGroups: any[] = [
-    {
-     
-      logo: 'assets/images/Company Logo (2).png',
-      jobDesignation: 'Social Media Assistant',
-      location: 'Paris,France',
-      text1: 'Full-Time',
-      text2: 'Marketing',
-      text3: 'Design',
-      show: true
-    },
-    {
-      
-      logo: 'assets/images/Logo.png',
-      jobDesignation: 'Brand Designer',
-      location: 'San Fransisco,USA',
-      text1: 'Full-Time',
-      text2: 'Marketing',
-      text3: 'Design',
-      show: true
-    },
-    // Add more groups as needed
-  ];
 
-  constructor() { }
+    jobs: any[] = [
+      {
+        designation: 'Software Developer',
+        companyLogo: 'assets/images/rec.png',
+        companyName: 'ABC Company',
+        isFeatured: true,
+        text1: 'Full-time',
+        text2: 'Mid-level',
+        text3: '$3000-$5000',
+        text4: 'Indonesia',
+        text5: 'Onsite'
+      },
+      {
+        designation: 'UX Designer',
+        companyLogo: 'assets/images/cde.png',
+        companyName: 'XYZ Company',
+        isFeatured: true,
+        text1: 'Full-time',
+        text2: 'Mid-level',
+        text3: '$3000-$5000',
+        text4: 'Indonesia',
+        text5: 'Onsite'
+      },
+      {
+        designation: 'Dot Net Developer',
+        companyLogo: 'assets/images/abc.png',
+        companyName: 'PRNV Company',
+        isFeatured: true,
+        text1: 'Full-time',
+        text2: 'Mid-level',
+        text3: '$3000-$5000',
+        text4: 'Indonesia',
+        text5: 'Onsite'
+      },{
+        designation: 'UX Designer',
+        companyLogo: 'assets/images/cde.png',
+        companyName: 'XYZ Company',
+        isFeatured: true,
+        text1: 'Full-time',
+        text2: 'Mid-level',
+        text3: '$3000-$5000',
+        text4: 'Indonesia',
+        text5: 'Onsite'
+      },
+      {
+        designation: 'Dot Net Developer',
+        companyLogo: 'assets/images/abc.png',
+        companyName: 'PRNV Company',
+        isFeatured: true,
+        text1: 'Full-time',
+        text2: 'Mid-level',
+        text3: '$3000-$5000',
+        text4: 'Indonesia',
+        text5: 'Onsite'
+      }
+      
+      // Add more job objects as needed
+    ];
 }

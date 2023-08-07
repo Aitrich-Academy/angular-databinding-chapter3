@@ -1,164 +1,74 @@
-h1,
-p {
-    text-align: left;
+.company {
+  display: flex;
+  align-items: center;
 
-}
-
-h1 {
-    margin-bottom: 0px;
-    /* Adjust the desired spacing */
-}
-
-p {
-    margin-top: 5px;
-    /* Adjust the desired spacing */
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    border: 2px solid;
-    padding: 5px 20px;
-    margin: 30px 0;
+ margin: 0 10px;
+  /* height: 90vh;
+  overflow-y: scroll; */ 
+
+
+  display: flex;
+  height: 90vh;
+
 }
 
-.image-container {
-    margin-right: 10px;
-    /* Adjust the margin as needed */
+.content
+{
+  flex-basis: 75%;
+  overflow-y: scroll;
 }
-
-.image {
-    width: 70px;
-    height: 70px;
-    vertical-align: middle;
-}
-
 .text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: middle;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px; /* Adjust the spacing between image and texts */
+  justify-content: flex-start;
+
 }
 
-.text-container h2,
+.job {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 15px 5px;
+
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.job-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.job-text {
+  margin: 0 15px;
+  color: rgb(125, 120, 105);
+  font-weight: 300;
+}
+
+.pills {
+  display: flex;
+  align-items: center;
+}
+
+.pills p {
+  border-radius: 25px;
+  background-color: rgb(196, 178, 154);
+  color: white;
+  padding: 5px;
+  margin: 0 5px;
+}
+
 .text-container p {
-    margin-left: 15px;
-    gap: -10px;
+  margin: 5px;
+  /* Remove default margin */
 }
-
-.full-time {
-    background-color: #eefaf6;
-    color: #57c3b3;
-    padding: 7px;
-    text-align: center;
-    width: 75px;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: 500;
-    margin-right: 10px;
-}
-
-.marketing {
-    color: #ffb836;
-    border: 2px solid #ffb836;
-    padding: 5px;
-    text-align: center;
-    width: 75px;
-    border-radius: 25px;
-    font-size: 15px;
-    font-weight: 500;
-    margin-right: 10px;
-}
-
-.design {
-    color: #4640de;
-    border: 2px solid #4640de;
-    padding: 5px;
-    text-align: center;
-    width: 75px;
-    border-radius: 25px;
-    font-size: 15px;
-    margin-right: 10px;
-    font-weight: 500;
-}
-
-
-
-.right-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .apply-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-bottom: 10px;
-  }
-  
-  .apply-button-container,
-  .range-input-container {
-    width: fit-content;
-  }
-  
-  .apply-button {
-    background-color: deepskyblue;
-    color: #fff;
-    border: none;
-    padding: 15px 50px;
-    margin-bottom: 10px;
-  }
-  
-   .range-input {
-   
-    /* -webkit-appearance: none;
-    appearance: none; */
-    height: 8px;
-    border-radius: 5px;
-    background-color: #ccc;
-    /* outline: none; */
-    margin-bottom: 5px;
-  }
-  
-
-  
-  /* .range-value {
-    text-align: center;
-  }  */
-
-  .pagination {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .pagination li {
-    display: inline-block;
-    margin: 0 5px;
-  }
-  
-  .pagination li a {
-    display: block;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #333;
-    background-color: #fff;
-    
-  }
-  
-  .pagination li a.active {
-    background-color: deepskyblue;
-    color: #fff;
-    border-color: deepskyblue;
-    border-radius: 5px;
-  }
-  
-  .pagination li .dots {
-    display: block;
-    padding: 5px 10px;
-    color: #333;
-  }

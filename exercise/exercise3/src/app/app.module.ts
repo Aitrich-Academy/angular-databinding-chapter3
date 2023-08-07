@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SecondFooterComponent } from './second-footer/second-footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
+import { SavedJobsComponent } from './saved-jobs/saved-jobs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
     SecondFooterComponent,
     SidebarComponent,
-    ContentComponent
+    HeaderComponent,
+    ContentComponent,
+    SavedJobsComponent
   ],
   imports: [
     BrowserModule,
