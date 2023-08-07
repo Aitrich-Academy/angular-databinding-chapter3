@@ -1,0 +1,39 @@
+<h1>All Jobs</h1>
+<p>Showing 73 results</p>
+
+<div class="container" *ngFor="let group of detailGroups">
+    <div *ngIf="group.show">
+      <img [src]="group.logo" alt="Company Logo">
+    </div>
+    <div class="text-container">
+      <h3>{{ group.jobDesignation }}</h3>
+      <p>Agency &bull; {{ group.location }}</p>
+      <p> <span class="full-time"> {{ group.text1 }} </span> <span class="marketing"> {{ group.text2 }}</span> <span class="design">{{ group.text3 }}</span></p>
+    </div>
+
+    <div class="right-content">
+        <div class="apply-container">
+          <div class="apply-button-container">
+            <button class="apply-button">Apply</button>
+          </div>
+          <div class="range-input-container">
+            <input type="range" class="range-input">
+            <span class="range-value"></span>
+          </div>
+        </div>
+         
+      </div>
+
+  </div>
+
+  <ul class="pagination">
+    <li><a href="#"><img src="assets\images\Vector.png"></a></li>
+    <li><a href="#" class="active">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><span class="dots">...</span></li>
+    <li><a href="#">33</a></li>
+    <li><a href="#"><img src="assets\images\Icon.png"></a></li>
+  </ul>
